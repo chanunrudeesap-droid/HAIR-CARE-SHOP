@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="th">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>HAIR CARE SHOP | ดูแลผมในทุกวัน</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="top"><a class="brand" href="#">HAIR<span>CARE</span></a><nav><a href="#products">สินค้า</a><a href="#about">เกี่ยวกับเรา</a><a href="#contact">ติดต่อ</a></nav><button class="cart" onclick="document.querySelector('#order').scrollIntoView({behavior:'smooth'})">สั่งซื้อสินค้า ↓</button></header>
+<section class="hero"><div class="hero-copy"><p class="eyebrow">EVERYDAY HAIR CARE</p><h1>ผมสวย สุขภาพดี<br><em>เริ่มต้นได้ทุกวัน</em></h1><p>เลือกผลิตภัณฑ์ดูแลเส้นผมที่เหมาะกับคุณ พร้อมสั่งซื้อได้ง่าย ๆ ในไม่กี่ขั้นตอน</p><a class="primary" href="#products">เลือกชมสินค้า</a></div><div class="hero-art"><div class="sun"></div><div class="bottle bottle-a"><small>HAIR CARE</small><b>SHAMPOO</b><span>DAILY CLEANSE</span></div><div class="bottle bottle-b"><small>HAIR CARE</small><b>HAIR SERUM</b><span>SMOOTH & SHINE</span></div></div></section>
+<section id="products" class="section"><p class="eyebrow">OUR PRODUCTS</p><h2>ผลิตภัณฑ์แนะนำ</h2><p class="sub">เลือกดูสินค้าและกดสั่งซื้อได้ทันที</p><div id="product-grid" class="products"></div></section>
+<section id="about" class="about"><div><p class="eyebrow">WHY HAIR CARE SHOP</p><h2>ดูแลเส้นผม<br>ง่ายกว่าที่คิด</h2></div><p>เราคัดสรรผลิตภัณฑ์พื้นฐานสำหรับการดูแลเส้นผมในทุกวัน พร้อมแสดงรายละเอียดสินค้า ราคา และรหัส SKU อย่างชัดเจน เพื่อให้ลูกค้าเลือกซื้อได้สะดวก</p></section>
+<section id="order" class="section order-section"><p class="eyebrow">PLACE YOUR ORDER</p><h2>แบบฟอร์มสั่งซื้อ</h2><form id="order-form">
+<div class="form-grid"><label>ชื่อ-นามสกุล<input required name="customer" placeholder="ชื่อผู้รับพัสดุ"></label><label>เบอร์โทรศัพท์<input required name="phone" pattern="[0-9]{9,10}" placeholder="08xxxxxxxx"></label><label class="wide">ที่อยู่จัดส่ง<textarea required name="address" rows="3" placeholder="บ้านเลขที่ ถนน แขวง/ตำบล เขต/อำเภอ จังหวัด รหัสไปรษณีย์"></textarea></label><label>สินค้า<select required name="sku" id="sku"></select></label><label>จำนวน<input required name="qty" type="number" min="1" value="1"></label></div>
+<button class="primary" type="submit">ยืนยันคำสั่งซื้อ</button><p id="notice" role="status"></p></form></section>
+<section id="contact" class="footer"><b>HAIR CARE SHOP</b><span>ร้านค้าตัวอย่างสำหรับงานระบบขายและจัดการคลังสินค้า</span><small>ข้อมูลสินค้าและราคาเป็นข้อมูลสมมติสำหรับการศึกษา</small></section>
+<script src="app.js"></script></body></html>
